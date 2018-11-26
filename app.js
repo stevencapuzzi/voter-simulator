@@ -111,7 +111,7 @@ $('#candidate-form form').on('submit', function(event){
      });
  });
 
- $('#vote-btn-div button').click(() =>{
+ $('#vote-btn-div button').click((event) =>{
     event.preventDefault();
     vote();
  })
