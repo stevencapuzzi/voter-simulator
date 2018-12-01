@@ -148,12 +148,15 @@ function selectVote(num1,num2){
     let rand = Math.random();
     if(rand < num1 ){
         //voting democratic
+        if(democrat_candidates.length>1)
         democrat_candidates[randomNumber(democrat_candidates.length-1)].votes++;
     }else if(rand < num2){
         //voting independent
+        if(independent_candidates.length>1)
         independent_candidates[randomNumber(independent_candidates.length-1)].votes++;
     }else{
         // voting republican.
+        if(republican_candidates.length>1)
         republican_candidates[randomNumber(republican_candidates.length-1)].votes++;
     }
 }
